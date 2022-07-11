@@ -24,6 +24,7 @@ body {
      height: 300px;
 }
 
+.heromobile{display: none;}
 
 .certificado {
     font-family: ARACNE, Arial, Helvetica, sans-serif;
@@ -132,6 +133,19 @@ footer{
     .items{cursor: pointer;}
 }
 
+@media screen and(max-width: 767px) {
+    .hero{display: none;}
+    .heromobile{
+        display:flex;
+        background-image: url("../img/hero.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 500px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .mobile{display: none;}
     .desktop{
@@ -174,7 +188,6 @@ footer{
         }
     }
 
-    
     .otherhabilidades{
         .logos{
             img{
