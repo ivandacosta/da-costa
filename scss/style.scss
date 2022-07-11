@@ -1,0 +1,193 @@
+@font-face {
+    font-family: ARACNE;
+    src: url("../fonts/ARACNE-ULTRA-CONDENSED_regular.ttf");
+}
+
+body {
+    background-color: #1E2D40;
+}
+
+.desktop {
+    display: none;
+}
+
+.nav-link{
+    font-family: sans-serif;
+}
+
+.hero {
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+     height: 300px;
+}
+
+
+.certificado {
+    font-family: ARACNE, Arial, Helvetica, sans-serif;
+    h2{font-size: 3em;}
+    margin: -80px 0;
+    padding: 30px;
+    background-color: #1E2D40;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        padding-top: 20px;
+        width: 380px;
+    }
+}
+
+.habilidades{
+    background-color: #1E2D40;
+    padding: 100px 0px;
+    margin: 50px auto;
+    font-family: ARACNE, Arial, Helvetica, sans-serif;
+    h2{font-size: 3em;}
+    text-align: center;
+    color: white;
+    #logos{
+        margin: 50px 0px;
+        img{
+            width: 65px;
+        }
+        img:nth-child(2){
+            padding-left: 5px;
+            width: 50px;
+        }
+        img:nth-child(3){
+            width: 80px;
+            padding-left: 5px;
+        }
+        img:nth-child(4){
+            width: 70px;
+            padding-left: 5px;
+        }
+    }
+}
+
+.otherhabilidades{
+    background-color: #1E2D40;
+    font-family: ARACNE, Arial, Helvetica, sans-serif;
+    h2{font-size: 3em;}
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+    margin: -53px auto;
+
+    .logos{
+        margin: 50px 0px;
+        img{
+            width: 50px;
+        }
+        img:nth-child(2){
+            padding-left: 5px;
+            width: 70px;
+        }
+        img:nth-child(3){
+            padding-left: 5px;
+        }
+        img:nth-child(4){
+            padding-left: 5px;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#00BEA0;
+    text-align: center;
+    font-size: 1.3em;
+    h2{
+        font-size: 2.5em;
+        color: white;
+        font-family: ARACNE, Arial, Helvetica, sans-serif;
+    }
+
+    img{
+        width: 50px;
+    }
+    a{text-decoration: none; color: black;}
+    p{color: black;}
+}
+
+.proyectos{
+    padding: 30px;
+    text-align: center;
+    background-color: #1E2D40;
+    font-family: ARACNE, Arial, Helvetica, sans-serif;
+    h2{font-size: 3em;}
+    a{text-decoration: none; color: white;}
+    a:hover{
+        color: #00BEA0;
+    }
+    .items{cursor: pointer;}
+}
+
+@media screen and (min-width: 768px) {
+    .mobile{display: none;}
+    .desktop{
+        background-color: #1E2D40;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid #00BEA0;
+        nav{
+            margin: auto 50px;
+            font-family: sans-serif;
+            font-weight: 700;
+            a{padding: 5px; text-decoration: none; color: white;}
+            a:hover{
+                color: #00BEA0;
+            }
+        }
+        .logo{width: 100px;}
+    }
+    .hero{
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        
+    }
+    
+    .habilidades{
+        #logos{
+            img{
+                width: 150px;
+            }
+            img:nth-child(2){
+                width: 110px;
+            }
+            img:nth-child(3){
+                width: 170px;
+            }
+            img:nth-child(4){
+                width: 150px;
+            }
+        }
+    }
+
+    
+    .otherhabilidades{
+        .logos{
+            img{
+                width: 150px;
+            }
+            img:nth-child(2){
+                width: 220px;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
